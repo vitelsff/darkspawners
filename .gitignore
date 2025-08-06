@@ -1,41 +1,18 @@
-# Compiled Lua sources
-luac.out
+# Usage of methods (for developers)
+```lua
+local Spawner = loadstring(game:HttpGet("https://codeberg.org/darkdarkdark/roblox/raw/branch/main/Spawner.lua"))()
+Spawner.GetPets() -- Returns a table of supported pets
+Spawner.GetSeeds() -- Returns a table of supported seeds 
+Spawner.GetEggs() -- Returns a table of supported eggs
+Spawner.SpawnPet("Raccoon", 1, 2) -- Spawns a Raccoon with 1 KG and 2 Age
+Spawner.SpawnSeed("Candy Blossom") -- Spawns Candy Blossom
+Spawner.SpawnEgg("Night Egg") -- Spawns Night Egg
+Spawner.Spin("Sunflower") -- Spins Sunflower
+Spawner.Load() -- Loads the Default UI
+```
 
-# luarocks build files
-*.src.rock
-*.zip
-*.tar.gz
-
-# Object files
-*.o
-*.os
-*.ko
-*.obj
-*.elf
-
-# Precompiled Headers
-*.gch
-*.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-*.def
-*.exp
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
+# Default Loader
+```lua
+local Spawner = loadstring(game:HttpGet("https://codeberg.org/darkdarkdark/roblox/raw/branch/main/Spawner.lua"))()
+Spawner.Load()
+```
